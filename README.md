@@ -17,3 +17,12 @@ I wouldn't recommend using this for projects that will be long-lived, or deploye
 3. Run `npm install` (check out `node_modules`! It's only 3.6mb!)
 4. Run `npm start`
 
+Alternatively, at step 2, you can use the `degit` tool to clone this repo without the existing git commits. Install it with `npm i -g degit` and then run `degit dceddia/bare-parcel-react your-project-folder`.
+
+If you'll be creating a lot of projects, it might be helpful to create an alias. Add this to your `~/.bashrc` or `~/.bash_profile` or `~/.zshrc`:
+
+```
+alias cpa="degit dceddia/bare-parcel-react"
+```
+
+Then you can just run `cpa my-project-name` to spin up new projects.
